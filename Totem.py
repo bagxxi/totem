@@ -121,7 +121,7 @@ while True:
                 encontrado = True
                 nacimiento = random.randint(1000, 9999)
                 conyugal = random.randint(1000, 9999)
-                chile = random.randint(1000, 9999)
+                argentina = random.randint(1000, 9999)
                 # Lista con los datos mezclados aleatoriamente
                 datos = [f"dni: {persona['dni']}", f"Nombre: {persona['nombre']}", f"País de nacimiento: {persona['pais']}", f"Ciudad de nacimiento: {persona['ciudad']}"]
                 random.shuffle(datos)
@@ -136,7 +136,7 @@ while True:
                     print(dato)
                 print()
                 random.shuffle(datos)
-                print(f"Certificado de pertenencia al país de Chile: {chile}")
+                print(f"Certificado de pertenencia al país de Argentina: {argentina}")
                 for dato in datos:
                     print(dato)
                 if persona["pais"].lower() == "argentina":
